@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
+	<title>This stupid Calculator</title>
+	<link href="style.css">
+	
+	<style>
+	    body {
+	        background: red;
+	    }
+	</style>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col s4"></div>
+			<div class="card col s4" id="calculator-display">
+				<h3><input class="right-align" disabled id="calculator-input" style="color:black;font-size:1em" type="text" value=""></h3>
+			</div>
+			<div class="col s4"></div>
+		</div>
+		<div class="row">
+			<div class="col s4"></div>
+			<div class="center-align col s4" id="calculator-buttons">
+				<input onclick="toDisplay('ac')" type="button" value="AC">
+				<input onclick="toDisplay('c')" type="button" value="C">
+				<input onclick="toDisplay('%')" type="button" value="%">
+				<input onclick="toDisplay('/')" type="button" value="&#247;"><br>
+				<input onclick="toDisplay('7')" type="button" value="7"> 
+				<input onclick="toDisplay('8')" type="button" value="8"> 
+				<input onclick="toDisplay('9')" type="button" value="9"> 
+				<input onclick="toDisplay('*')" type="button" value="&#215;"><br>
+				<input onclick="toDisplay('4')" type="button" value="4"> 
+				<input onclick="toDisplay('5')" type="button" value="5"> 
+				<input onclick="toDisplay('6')" type="button" value="6"> 
+				<input onclick="toDisplay('-')" type="button" value="-"><br>
+				<input onclick="toDisplay('1')" type="button" value="1"> 
+				<input onclick="toDisplay('2')" type="button" value="2"> 
+				<input onclick="toDisplay('3')" type="button" value="3"> 
+				<input onclick="toDisplay('+')" type="button" value="+"><br>
+				<input onclick="toDisplay('0')" type="button" value="0"> 
+				<input onclick="toDisplay('.')" type="button" value=".">
+				<input onclick="toDisplay('=')" type="button" value="=">
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
+	</script> 
+	<script src="script.js">
+	</script>
+</body>
+</html>
